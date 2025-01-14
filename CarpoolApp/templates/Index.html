@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpoolGo | Eco-Friendly Rides</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            background-color: #f7f9fc;
+            color: #333333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #355c7d;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #6fcf97;
+        }
+
+        .hero-section {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #355c7d, #6fcf97);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .hero-section .btn {
+            padding: 12px 30px;
+            background-color: #6fcf97;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero-section .btn:hover {
+            background-color: #36b89d;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 50px 10%;
+            background-color: white;
+        }
+
+        .feature {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #6fcf97;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #355c7d;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            padding: 40px 10%;
+            background: #f7f9fc;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #355c7d;
+        }
+
+        .cta-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .cta-section .btn {
+            padding: 12px 30px;
+            background-color: #6fcf97;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cta-section .btn:hover {
+            background-color: #36b89d;
+        }
+
+        footer {
+            padding: 20px 10%;
+            background-color: #355c7d;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #6fcf97;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section h1 {
+                font-size: 36px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">CarpoolGo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Find a Ride</a>
+            <a href="#">Offer a Ride</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <h1>Eco-Friendly Carpooling</h1>
+            <p>Save money, reduce traffic, and help the environment by joining CarpoolGo today.</p>
+            <button class="btn">Join Now</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-car"></i>
+            <h3>Find a Ride</h3>
+            <p>Search for rides in your area and travel safely with verified users.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-handshake"></i>
+            <h3>Offer a Ride</h3>
+            <p>Offer your ride to share costs and meet new people along the way.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h3>Go Green</h3>
+            <p>Reduce your carbon footprint and make a positive impact on the environment.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Join the Movement</h2>
+        <p>Be part of a growing community that's making a difference. Start carpooling today!</p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 CarpoolGo. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>

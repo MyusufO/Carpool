@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpoolGo | Search</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Search Container -->
+    <div class="search-container" id="searchContainer">
+        <div class="search-box">
+            <i class="fas fa-search" style="color: var(--text-3); font-size: 18px;"></i>
+            <input type="text" class="search-input" placeholder="What are you looking for?" id="searchInput">
+            <button class="search-btn" onclick="showResults()">
+                <i class="fas fa-search"></i>
+                Search
+            </button>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div class="results-page" id="resultsPage">
+        <div class="results-header">
+            <button class="back-btn" onclick="showSearch()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="mini-search">
+                <i class="fas fa-search" style="color: var(--text-3);"></i>
+                <input type="text" placeholder="Search..." id="miniSearchInput">
+            </div>
+        </div>
+
+        <!-- Sample Results -->
+        <div class="result-item">
+            <div class="result-title">The Art of Modern Web Design</div>
+            <div class="result-description">
+                Discover the principles and practices that make modern web designs both beautiful and functional. Learn about color theory, typography, and responsive layouts.
+            </div>
+            <div class="result-meta">
+                <span><i class="far fa-clock"></i> 5 min read</span>
+                <span><i class="far fa-eye"></i> 1.2k views</span>
+                <span><i class="far fa-heart"></i> 234 likes</span>
+            </div>
+            <div class="tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Creative</span>
+            </div>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">Mastering React Components</div>
+            <div class="result-description">
+                A comprehensive guide to building reusable and efficient React components. Perfect for developers looking to level up their frontend skills.
+            </div>
+            <div class="result-meta">
+                <span><i class="far fa-clock"></i> 8 min read</span>
+                <span><i class="far fa-eye"></i> 2.3k views</span>
+                <span><i class="far fa-heart"></i> 456 likes</span>
+            </div>
+            <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Development</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
