@@ -7,7 +7,10 @@
     {% load static %}  
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'Carpool/Style.css' %}">
+    <link rel="stylesheet" href="{% static 'Carpool/Form.css' %}">
+    <link rel="stylesheet" href="{% static 'Carpool/Theme.css' %}">
 </head>
+
 <body>
     <button class="theme-toggle" onclick="toggleTheme()">
         <i class="fas fa-moon"></i>
@@ -41,6 +44,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
     <script src="{% static 'Carpool/Function.js' %}"></script>
+    <script src="{% static 'Carpool/Toggle.js' %}"></script>
     <script>
         const toggleLink = document.getElementById("toggle-link");
         const loginForm = document.getElementById("login-form");
